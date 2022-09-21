@@ -35,7 +35,7 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
         callbackGasLimit,
         interval,
     ]
-    console.log(args)
+
     const raffle = await deploy("Raffle", {
         from: deployer,
         args: args,
